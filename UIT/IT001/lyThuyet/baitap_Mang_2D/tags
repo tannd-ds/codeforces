@@ -1,0 +1,42 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/tannd/Documents/UIT/IT001/lyThuyet/baitap_Mang_2D/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20220102.0/
+det	lamThem02.cpp	/^float det(float A[][100], int start, int n) {$/;"	f	typeref:typename:float
+doiXung	lamThem01.cpp	/^bool doiXung(int A[][100], int N, int M) {$/;"	f	typeref:typename:bool
+donVi	lamThem01.cpp	/^bool donVi(int A[][100], int N, int M) {$/;"	f	typeref:typename:bool
+generateRandomArray	batBuoc01.cpp	/^void generateRandomArray(float a[][101], int aRow, int aCol) {$/;"	f	typeref:typename:void
+generateRandomArray	batBuoc02.cpp	/^void generateRandomArray(float a[][101], int aRow, int aCol) {$/;"	f	typeref:typename:void
+generateRandomArray	batBuoc03.cpp	/^void generateRandomArray(float a[][101], int aRow, int aCol) {$/;"	f	typeref:typename:void
+generateRandomArray	lamThem02.cpp	/^void generateRandomArray(float a[][100], int N, int M) {$/;"	f	typeref:typename:void
+inputArray	batBuoc01.cpp	/^void inputArray(float a[][101], int &aRow, int &aCol) {$/;"	f	typeref:typename:void
+inputArray	batBuoc02.cpp	/^void inputArray(float a[][101], int &aRow, int &aCol) {$/;"	f	typeref:typename:void
+inputArray	batBuoc03.cpp	/^void inputArray(float a[][101], int &aRow, int &aCol) {$/;"	f	typeref:typename:void
+isEye	lamThem01.cpp	/^bool isEye(int A[][100], int N, int M) {$/;"	f	typeref:typename:bool
+main	batBuoc01.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	batBuoc02.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	batBuoc03.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	lamThem01.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	lamThem02.cpp	/^int main() {$/;"	f	typeref:typename:int
+max	lamThem01.cpp	/^int max(int A[][100], int N, int M) {$/;"	f	typeref:typename:int
+min	lamThem01.cpp	/^int min(int A[][100], int N, int M) {$/;"	f	typeref:typename:int
+nhap	lamThem01.cpp	/^void nhap(int A[][100], int &N, int &M) {$/;"	f	typeref:typename:void
+nhap	lamThem02.cpp	/^void nhap(float A[][100], int &N, int &M) {$/;"	f	typeref:typename:void
+outputArray	batBuoc01.cpp	/^void outputArray(float a[][101], int aRow, int aCol) {$/;"	f	typeref:typename:void
+outputArray	batBuoc02.cpp	/^void outputArray(float a[][101], int aRow, int aCol) {$/;"	f	typeref:typename:void
+outputArray	batBuoc03.cpp	/^void outputArray(float a[][101], int aRow, int aCol) {$/;"	f	typeref:typename:void
+outputMultiply	batBuoc02.cpp	/^void outputMultiply(float a[][101], float b[][101], int aRow, int aCol, int bRow, int bCol) {$/;"	f	typeref:typename:void
+outputSum	batBuoc01.cpp	/^void outputSum(float a[][101], float b[][101], int aRow, int aCol, int bRow, int bCol) {$/;"	f	typeref:typename:void
+outputSum	batBuoc03.cpp	/^void outputSum(float a[][101], int aRow, int aCol) {$/;"	f	typeref:typename:void
+swap	lamThem02.cpp	/^void swap(float a, float b) {$/;"	f	typeref:typename:void
+timX	lamThem01.cpp	/^void timX(int A[][100], int N, int M, int X) {$/;"	f	typeref:typename:void
+tongPhanTu	lamThem01.cpp	/^void tongPhanTu(int A[][100], int N, int M) {$/;"	f	typeref:typename:void
+xuat	lamThem01.cpp	/^void xuat(int A[][100], int N, int M) {$/;"	f	typeref:typename:void
+xuat	lamThem02.cpp	/^void xuat(float A[][100], int N, int M) {$/;"	f	typeref:typename:void

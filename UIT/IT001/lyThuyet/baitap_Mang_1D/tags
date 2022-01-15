@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/tannd/Documents/UIT/IT001/lyThuyet/baitap_Mang_1D/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20220102.0/
+generateRandomArray	batBuoc01.cpp	/^void generateRandomArray(int a[], int n) {$/;"	f	typeref:typename:void
+generateRandomArray	batBuoc02.cpp	/^void generateRandomArray(int a[], int n) {$/;"	f	typeref:typename:void
+generateRandomArray	batBuoc03.cpp	/^void generateRandomArray(int a[], int n) {$/;"	f	typeref:typename:void
+generateRandomArray	batBuoc04.cpp	/^void generateRandomArray(int a[], int n) {$/;"	f	typeref:typename:void
+generateRandomArray	batBuoc05.cpp	/^void generateRandomArray(int a[], int n) {$/;"	f	typeref:typename:void
+generateRandomArray	template.cpp	/^void generateRandomArray(int a[], int n) {$/;"	f	typeref:typename:void
+inputArray	batBuoc01.cpp	/^void inputArray(int a[], int &n) {$/;"	f	typeref:typename:void
+inputArray	batBuoc02.cpp	/^void inputArray(int a[], int &n) {$/;"	f	typeref:typename:void
+inputArray	batBuoc03.cpp	/^void inputArray(int a[], int &n) {$/;"	f	typeref:typename:void
+inputArray	batBuoc04.cpp	/^void inputArray(int a[], int &n) {$/;"	f	typeref:typename:void
+inputArray	batBuoc05.cpp	/^void inputArray(int a[], int &n) {$/;"	f	typeref:typename:void
+inputArray	template.cpp	/^void inputArray(int a[], int &n) {$/;"	f	typeref:typename:void
+isPalindrome	batBuoc02.cpp	/^bool isPalindrome(int a[], int n) {$/;"	f	typeref:typename:bool
+isPrime	batBuoc01.cpp	/^bool isPrime(int x) {$/;"	f	typeref:typename:bool
+main	batBuoc01.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	batBuoc02.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	batBuoc03.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	batBuoc04.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	batBuoc05.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	template.cpp	/^int main() {$/;"	f	typeref:typename:int
+maxIndex	batBuoc04.cpp	/^int maxIndex(int a[], int n) {$/;"	f	typeref:typename:int
+maxNegative	batBuoc05.cpp	/^int maxNegative(int a[], int n) {$/;"	f	typeref:typename:int
+outputArray	batBuoc02.cpp	/^void outputArray(int a[], int n) {$/;"	f	typeref:typename:void
+outputArray	batBuoc03.cpp	/^void outputArray(int a[], int n) {$/;"	f	typeref:typename:void
+outputArray	batBuoc04.cpp	/^void outputArray(int a[], int n) {$/;"	f	typeref:typename:void
+outputArray	batBuoc05.cpp	/^void outputArray(int a[], int n) {$/;"	f	typeref:typename:void
+outputArray	template.cpp	/^void outputArray(int a[], int n) {$/;"	f	typeref:typename:void
+outputPrime	batBuoc01.cpp	/^void outputPrime(int a[], int n) {$/;"	f	typeref:typename:void
+popIndex	batBuoc03.cpp	/^int popIndex(int a[], int &n, int index) {$/;"	f	typeref:typename:int
