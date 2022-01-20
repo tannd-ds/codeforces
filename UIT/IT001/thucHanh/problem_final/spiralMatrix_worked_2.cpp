@@ -53,21 +53,14 @@ void solve(int a[][MAX], int n, int m) {
 		cout << a[i][j] << " ";
 		a[i][j] = 0;
 		printed++;
-		if (a[i + dir[currDir][0]][j + dir[currDir][1]] == 0)
+		int iNext = i + dir[currDir][0];
+		int jNext = j + dir[currDir][1];
+		if (a[iNext][jNext] == 0) {
 			currDir = (currDir + 1) % 4;
-		i += dir[currDir][0];
-		j += dir[currDir][1];
-		//int iNext = i + dir[currDir][0];
-		//int jNext = j + dir[currDir][1];
-		//if (a[iNext][jNext] == 0) {
-		//	currDir = (currDir + 1) % 4;
-		//	iNext = i + dir[currDir][0];
-		//	jNext = j + dir[currDir][1];
-		//}
-		//i = iNext;
-		//j = jNext;
+			iNext = i + dir[currDir][0];
+			jNext = j + dir[currDir][1];
+		}
+		i = iNext;
+		j = jNext;
 	}
 }
-
-
-
