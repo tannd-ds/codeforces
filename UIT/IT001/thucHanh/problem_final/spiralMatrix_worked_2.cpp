@@ -1,17 +1,14 @@
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
 #define MAX 1001
 
 void input(int a[][MAX], int &n, int &m);
-void output(int a[][MAX], int &n, int &m);
 void solve(int a[][MAX], int n, int m);
 
 int main() {
 	int n, m, a[MAX][MAX] = {0};
 	input(a, n, m);
-	output(a, n, m);
 	solve(a, n, m);
 	return 0;
 }
@@ -23,17 +20,6 @@ void input(int a[][MAX], int &n, int &m) {
 		for (int j = 1; j <= m; j++)
 			cin >> a[i][j];
 }
-
-void output(int a[][MAX], int &n, int &m) {
-	cout << "\n";
-	for (int i = 1; i <= n; i++) {
-		for (int j = 1; j <= m; j++)
-			cout << setw(5) << left << a[i][j];
-		cout << "\n";
-	}
-}
-
-
 
 void solve(int a[][MAX], int n, int m) {
 	/*
