@@ -1,17 +1,14 @@
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
 #define MAX 1001
 
 void input(int a[][MAX], int &n, int &m);
-void output(int a[][MAX], int &n, int &m);
 void solve(int a[][MAX], int n, int m);
 
 int main() {
-	int n, m, a[MAX][MAX];
+	int n, m, a[MAX][MAX] = {0};
 	input(a, n, m);
-	output(a, n, m);
 	solve(a, n, m);
 	return 0;
 }
@@ -19,56 +16,37 @@ int main() {
 void input(int a[][MAX], int &n, int &m) {
 	cout << "Nhap n, m: ";
 	cin >> n >> m;
-	for (int i = 0; i < n; i++)
-		for (int j = 0; j < m; j++)
+	for (int i = 1; i <= n; i++)
+		for (int j = 1; j <= m; j++)
 			cin >> a[i][j];
 }
 
 void solve(int a[][MAX], int n, int m) {
-	int answer[MAX*MAX] =  {0};
-	int direction[4][2] =  {{ 0,  1},	// dicrection[0] -> Go right
-							{ 1,  0},	// dicrection[1] -> Go down
-							{ 0, -1},	// dicrection[2] -> Go left
-							{-1,  0}};	// dicrection[3] -> Go up
-	int border[4] = {m-1, n-1, 0, 0};		// Border for each direction
+	/*
+	 * dir -> Direction			   : 4*2 2D array, stores the vector for each direction.
+	 * currDir -> Current Direction: an integer, stores the direction of the next step.
+	 * printed 					   : an integer, stores number of elements printed.
+	 */
+	int dir[4][2] = {{ 0,  1},	// direction[0] -> Go right
+					 { 1,  0},	// direction[1] -> Go down
+					 { 0, -1},	// direction[2] -> Go left
+					 {-1,  0}};	// direction[3] -> Go up
 
-	int currentPosition  = 0;
-	int currentDirection = 0; // The first direction is go right
-	int i = 0, j = -1;
-	while (currentPosition < n*m) {
-		if (currentDirection == 0 || currentDirection == 1) {
-			while (i * abs(direction[currentDirection][0]) + j * abs(direction[currentDirection][1]) <= border[currentDirection]) {
-				i += direction[currentDirection][0];
-				j += direction[currentDirection][1];
-				cout << i << " " << j  << "\n ";
-				answer[currentPosition] = a[i][j];
-				currentPosition++;
-			}
-		} else {
-			while (i * abs(direction[currentDirection][0]) + j * abs(direction[currentDirection][1]) >= border[currentDirection]) {
-				i += direction[currentDirection][0];
-				j += direction[currentDirection][1];
-				cout << i << " " << j  << "\n ";
-				answer[currentPosition] = a[i][j];
-				currentPosition++;
-			}
+	int printed = 0;   // Nothing's been printed yet
+	int currDir = 0;   // The first direction is Go right
+	int i = 1, j = 1;  // The first position is in the top left corner
+	while (printed < n*m) {
+		cout << a[i][j] << " ";
+		a[i][j] = 0;
+		printed++;
+		int iNext = i + dir[currDir][0];
+		int jNext = j + dir[currDir][1];
+		if (a[iNext][jNext] == 0) {
+			currDir = (currDir + 1) % 4;
+			iNext = i + dir[currDir][0];
+			jNext = j + dir[currDir][1];
 		}
-		i -= direction[currentDirection][0];
-		j -= direction[currentDirection][1];
-		cout << "out of loop\n";
-		border[currentDirection] -= (currentDirection == 0 || currentDirection == 1) ? 1 : -1;
-		currentDirection = (currentDirection + 1) % 4;
-	}
-
-	for (int i = 0; i < n*m; i++) {
-		cout << answer[i] << " ";
-	}
-}
-
-void output(int a[][MAX], int &n, int &m) {
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < n; j++)
-			cout << setw(5) << left << a[i][j];
-		cout << "\n";
+		i = iNext;
+		j = jNext;
 	}
 }
