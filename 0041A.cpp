@@ -1,9 +1,7 @@
-// It runs fine here, but when submit on Codeforces, it wrong. Don't really understand.
+// Codeforces problem: http://codeforces.com/contest/41/problem/A
 #include <iostream>
 #include <string>
 using namespace std;
-
-void solve(string s, string t);
 
 int main() {
 
@@ -11,20 +9,20 @@ int main() {
 	getline(cin, s);
 	getline(cin, t);
 
-	solve(s, t);
-
-	return 0;
-}
-
-void solve(string s, string t) {
-	if (s.size() != t.size()) {
-		cout << "NO";
+	if (s.length() != t.length()) {
+		cout << "NO" << endl;
+		return 0;
 	} else {
 		int i = 0;
-		while (s[i] == t[t.size() - 1 - i]) i++;
-		if (i > s.size())
-			cout << "YES";
-		else
-			cout << "NO";
+		while (i < s.length()) {
+			if (s[i] != t[t.length() - 1 - i]) {
+				cout << "NO" << endl;
+				return 0;
+			}
+			i++;
+		}
 	}
+	cout << "YES" << endl;
+
+	return 0;
 }
