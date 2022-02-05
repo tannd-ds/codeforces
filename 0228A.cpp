@@ -1,17 +1,25 @@
+// Codeforces problem: http://codeforces.com/contest/228/problem/A
 #include <iostream>
 using namespace std;
 
 int main() {
 
-	int s[4], answer = 0;
+	int needToBuy = 0;
+	int colors[4];
+
 	for (int i = 0; i < 4; i++) {
-		cin >> s[i];
+		int color;
+		cin >> color;
+		colors[i] = color;
 		for (int j = 0; j < i; j++) {
-			if (s[i] == s[j])
-				answer++;
+			if (colors[i] == colors[j]) {
+				needToBuy++;
+				break;
+			}
 		}
 	}
-	cout << answer;
+
+	cout << needToBuy << endl;
 
 	return 0;
 }
